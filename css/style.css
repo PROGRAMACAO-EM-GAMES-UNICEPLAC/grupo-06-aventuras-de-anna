@@ -1,0 +1,43 @@
+/* Reset mínimo */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fundo da página */
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #0d1b2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  color: #e0d7f7;
+  overflow: hidden;
+}
+
+/* Wrapper: mantém a proporção 16:9 e limita ao viewport */
+#game-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+
+  /* Proporção 16:9 via padding-top */
+  aspect-ratio: 16 / 9;
+
+  /* Nunca ultrapassar a altura disponível */
+  max-height: 100vh;
+
+  /* Centralizar quando o viewport for mais largo que 16:9 */
+  margin: 0 auto;
+}
+
+/* O canvas preenche o wrapper sem deformar */
+#game-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

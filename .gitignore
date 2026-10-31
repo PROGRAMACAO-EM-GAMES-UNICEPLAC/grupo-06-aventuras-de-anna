@@ -1,0 +1,21 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Ambiente local
+.env
+.env.local
+
+# Ferramentas de suporte do agente / IDE
+.agents/
+skills-lock.json
+
+# Documentação interna de desenvolvimento
+/README_Project_Anna.md
